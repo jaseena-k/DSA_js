@@ -29,17 +29,17 @@ console.log("5"*2) // 10
 // Type casting 
 //it  means manually converting a value from one data type to another.
 
-// let age = prompt("enter your age") //prompt() → mainly browser JavaScript , readline → Node.js terminal input
-// console.log(age); //you will get the enterd age as string because prompt() only take string values 
+let age = prompt("enter your age") //prompt() → mainly browser JavaScript , readline → Node.js terminal input
+console.log(age); //you will get the enterd age as string because prompt() only take string values 
 
-// let age = Number (prompt("enter your age")) //now you will get age as number 
-// console.log(age); 
+let age = Number (prompt("enter your age")) //now you will get age as number 
+console.log(age); 
 
-// let age =  (prompt("enter your age")) 
-// age =Number(age) 
-// console.log (typeof(age)) //type is number because age converted in to number type but  Number("jasi") it's out put get NaN
+let age =  (prompt("enter your age")) 
+age =Number(age) 
+console.log (typeof(age)) //type is number because age converted in to number type but  Number("jasi") it's out put get NaN
 
-//Swapping 
+Swapping 
 //First method (swapp variable with extra variable )
 
 let x =10 
