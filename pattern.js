@@ -18,7 +18,7 @@ for(let i=1;i<=num;i++){
     
 }
 
-right  triangle
+//right  triangle
 
 let n= prompt("Enter  a number: ");
 
@@ -29,7 +29,7 @@ for(let i=1;i<=n;i++){            // row depens on number of n and when main loo
     console.log();
 }
 
-number pattern like right triangle
+//number pattern like right triangle
 
 let n= prompt("Enter  a number: ");
 
@@ -41,7 +41,7 @@ for(let i=1;i<=n;i++){
 }
 
 
-alphabet right angle
+//alphabet right angle
 
 let n= prompt("Enter  a number: ");
 
@@ -74,7 +74,7 @@ for (let i=1; i<=n;i++){
     
 }
 
-X pattern 
+//X pattern 
 
 const prompt = require("prompt-sync")();  
 let n = Number(prompt(("enter a number ")))
@@ -92,7 +92,7 @@ for(let i=1;i<=n;i++){
     
 }
 
-V pattern 
+//V pattern 
 
 const prompt = require("prompt-sync")();  
 let n = Number(prompt(("enter a number ")))
