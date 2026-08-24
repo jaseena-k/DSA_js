@@ -1,56 +1,36 @@
-//Math algorithms
-// Fibonacci (Q - Give a number 'n' and find the first 'n' elemnets of fibonacci sequence)
-// it's O(n) linear time complexity because value of n increases no.of times 8 the line exicutes also increases
+// Power of two algorithms
+// give a positive integer 'n' ,determine if the number is power of 2 or not 
+// Big-O = O(logn)
 
-// function fibonacci(n){
-//     let fib =[0,1]
+function isPowerOfTwo(n){
 
-//     for(let i =2 ;i<n;i++){
-//         fib[i]=fib[i-1]+fib[i-2]
-//     }
-
-//     return fib
-
-
-// }
-
-// console.log(fibonacci(3)) //[ 0, 1, 1 ]   add with preceading 2 numbers 
-// console.log(fibonacci(4)) //[ 0, 1, 1, 2 ]
-// console.log(fibonacci(5)) // [ 0, 1, 1, 2, 3 ]
-
-//Factorial
-//Give an integer 'n' find the factorial of the integer
-//big O - 0(n) -linear
-
-// function factorial(n){
-//     let result = 1
-//     for(let i=2 ;i<=n;i++){
-//         result = result * i
-//     }
-//     return result
-// }
-
-// console.log(factorial(0)) 
-// console.log(factorial(5)) 
-
-// isPrime
-
-function isPrime(n) {
-    if (n < 2) {
+    if(n<1){
         return false
     }
-
-    for (let i = 2; i < n; i++) {
-        if (n % i === 0) {
+    while(n>1){
+        if(n%2 !==0){
             return false
         }
+        n = n/2 
     }
-
     return true
+
 }
 
-console.log(isPrime(0)); // false
-console.log(isPrime(1)); // false
-console.log(isPrime(5)); // true
+console.log(isPowerOfTwo(1)); //true
+console.log(isPowerOfTwo(4)); //true
+console.log(isPowerOfTwo(5)); //false
 
+// Bitwise Power of two
 
+function isPowerOfTwoBitwise(n){
+    if (n<1){
+        return false
+    }
+     return n=(n& (n-1)) ==0
+
+}
+
+console.log(isPowerOfTwoBitwise(1)); //true
+console.log(isPowerOfTwoBitwise(4)); //true
+console.log(isPowerOfTwoBitwise(5)); //false
